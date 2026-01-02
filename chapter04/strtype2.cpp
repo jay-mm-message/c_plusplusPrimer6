@@ -9,6 +9,7 @@ int main()
 
     cout << "You can assign one string object to another: s2 = s1\n";
     s2 = s1;
+	s1 = "123";
     cout << "s1: " << s1 << ", s2: " << s2 << endl;
     cout << "You can assign a C-style string to a string object.\n";
     cout << "s2 = \"buzzard\"\n";
