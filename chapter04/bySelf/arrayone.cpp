@@ -1,5 +1,17 @@
 #include <iostream>
 
+void p_array(int arr[], const int sz,
+			const std::string tags) {
+
+	for(auto i = 0 ; i < sz ; ++i) {
+		std::cout << tags
+				  << "[" << i << "]: " 
+				  << arr[i];
+		std::cout << std::endl;
+	}
+	std::cout << std::endl;
+}
+
 int main() {
 	using namespace std;
 	const int Sz = 3;
@@ -8,19 +20,11 @@ int main() {
 	yams[1] = 8;
 	yams[2] = 6;
 
-	for(auto i = 0 ; i < Sz ; ++i) {
-		cout << "yams[" << i << "]: " << yams[i];
-		cout << endl;
-	}
-	cout << endl;
+	p_array(yams, Sz, "yams");
 
 	int yams_costs[Sz] {20, 30, 5};
-	for(auto i = 0 ; i < Sz ; ++i) {
-		cout << "yams_cost[" << i << "] = "
-		     << yams_costs[i]
-			 << endl;
-	}
-	cout << endl;
+
+	p_array(yams_costs, Sz, "yams_cost");
 
 	int yams_total{0};
 
@@ -38,5 +42,12 @@ int main() {
 	cout << "yams_costs_total: "
 		 << yams_costs_total
 		 << endl;
+
+	cout << endl;
+	
+	int things[] {1, 5, 3, 8};
+	p_array(things, sizeof(things)/sizeof(int), "things");
+
+
 	return 0;
 }
