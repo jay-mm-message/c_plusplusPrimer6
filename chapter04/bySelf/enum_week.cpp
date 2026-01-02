@@ -58,7 +58,6 @@ void menu() {
 
 int main() {
 	system("clear");
-	Week week = Week::Monday;
 	menu();
 	int type;
 	cout << "Please type: ";
