@@ -7,6 +7,6 @@ if [ -e a.out ];then
 fi
 
 if [ $FILE_NAME != "" ];then
-	g++ $FILE_NAME
+	g++ -std=c++17 $FILE_NAME
 	./a.out
 fi
