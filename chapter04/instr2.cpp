@@ -11,8 +11,8 @@ int main()
     cin.getline(name, ArSize);  // reads through newline
     cout << "Enter your favorite dessert:\n";
     cin.getline(dessert, ArSize);
-    cout << "I have some delicious " << dessert;
-    cout << " for you, " << name << ".\n";
+    cout << "I have some delicious [" << dessert;
+    cout << "] for you, [" << name << "].\n";
     // cin.get();
     return 0; 
 }
