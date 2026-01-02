@@ -21,7 +21,14 @@ int main() {
 		29.99
 	};
 
+	inflatable pal {
+		"Audacious Arthur",
+		3.12,
+		32.99
+	};
+
 	p_struct(guest);
+	p_struct(pal);
 
 	return 0;
 }
