@@ -14,6 +14,14 @@ void p_struct(inflatable obj) {
 		 << endl;
 }
 
+inflatable copy(inflatable src) {
+	inflatable ret {};
+	strcpy(ret.name, src.name);
+	ret.volume = src.volume;
+	ret.price = src.price;
+	return ret;
+}
+
 int main() {
 	inflatable guest {
 		"Glorious Gloria",
@@ -29,6 +37,22 @@ int main() {
 
 	p_struct(guest);
 	p_struct(pal);
+
+	inflatable guest2 = copy(guest);
+	p_struct(guest2);
+
+	inflatable choice = guest2;
+	p_struct(choice);
+
+	const int sz = 10;
+	inflatable buf[sz] {};
+	for(auto i = 0 ; i < sz ; ++i) {
+		buf[i] = copy(guest);
+	}
+	for(auto e : buf) {
+		p_struct(e);
+	}
+	cout << endl;
 
 	return 0;
 }
