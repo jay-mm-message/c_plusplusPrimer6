@@ -5,8 +5,8 @@
 int main()
 {
     using namespace std;
-    char charr[20]; 
-    string str;
+    char charr[20] {'\0'}; 
+    string str {""};
 
     cout << "Length of string in charr before input: " 
          << strlen(charr) << endl;
