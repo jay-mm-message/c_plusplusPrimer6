@@ -4,10 +4,10 @@
 int main()
 {
     using namespace std;
-    char charr1[20];            // create an empty array
-    char charr2[20] = "jaguar"; // create an initialized array
-    string str1;                // create an empty string object
-    string str2 = "panther";    // create an initialized string
+    char charr1[20] {'\0'};            // create an empty array
+    char charr2[20] {"jaguar"}; // create an initialized array
+    string str1 {""};                // create an empty string object
+    string str2 {"panther"};    // create an initialized string
 
     cout << "Enter a kind of feline: ";
     cin >> charr1;
