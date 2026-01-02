@@ -5,10 +5,10 @@
 int main()
 {
     using namespace std;
-    char charr1[20]; 
-    char charr2[20] = "jaguar"; 
-    string str1;  
-    string str2 = "panther";
+    char charr1[20] {'\0'}; 
+    char charr2[20] {"jaguar"}; 
+    string str1 {""};  
+    string str2 {"panther"};
 
     // assignment for string objects and character arrays
     str1 = str2;                // copy str2 to str1
