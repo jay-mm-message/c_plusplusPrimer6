@@ -12,6 +12,18 @@ void p_array(int arr[], const int sz,
 	std::cout << std::endl;
 }
 
+void p_array(char arr[], const int sz,
+			const std::string tags) {
+
+	for(auto i = 0 ; i < sz ; ++i) {
+		std::cout << tags
+				  << "[" << i << "]: " 
+				  << arr[i];
+		std::cout << std::endl;
+	}
+	std::cout << std::endl;
+}
+
 int main() {
 	using namespace std;
 	const int Sz = 3;
@@ -44,10 +56,13 @@ int main() {
 		 << endl;
 
 	cout << endl;
-	
+
 	int things[] {1, 5, 3, 8};
 	p_array(things, sizeof(things)/sizeof(int), "things");
 
+	char c_tlifs[] {'h', 'i', 112, '\0'};
+	p_array(c_tlifs, sizeof(c_tlifs)/sizeof(char),
+			"tlifs");
 
 	return 0;
 }
