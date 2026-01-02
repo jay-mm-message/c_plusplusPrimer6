@@ -54,5 +54,13 @@ int main() {
 	}
 	cout << endl;
 
+	inflatable guests[2] {
+		{"Bambi", 0.5, 21.99},
+		{"Godzilla", 2000, 565.99}
+	};
+
+	for(auto e : guests) {
+		p_struct(e);
+	}
 	return 0;
 }
