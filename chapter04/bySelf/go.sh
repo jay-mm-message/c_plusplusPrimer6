@@ -1,3 +1,4 @@
+clear
 
 FILE_NAME=$1
 
