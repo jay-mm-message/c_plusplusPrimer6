@@ -1,10 +1,10 @@
-// strtype2.cpp –- assigning, adding, and appending
+// strtype2.cpp ï¿½- assigning, adding, and appending
 #include <iostream>
 #include <string>               // make string class available
 int main()
 {
     using namespace std;
-    string s1 = "penguin";
+    string s1 {"penguin"};
     string s2, s3;
 
     cout << "You can assign one string object to another: s2 = s1\n";
