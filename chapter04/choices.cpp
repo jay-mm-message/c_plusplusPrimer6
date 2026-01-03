@@ -4,6 +4,8 @@
 #include <array>    // C++0x
 int main()
 {
+	system("clear");
+	
     using namespace std;
 // C, original C++
     double a1[4] = {1.2, 2.4, 3.6, 4.8};
