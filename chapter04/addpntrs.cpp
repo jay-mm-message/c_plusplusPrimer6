@@ -3,16 +3,30 @@
 using namespace std;
 
 void p_wages(double wages[], const int sz) {
+	// c-style
 	for(auto *p = wages ; p != &wages[sz] ; ++p) {
 		cout << *p << ' ';
+	}
+	cout << endl;
+	// c++ style
+	double *p = wages;
+	for(auto i = 0 ; i < sz ; ++i) {
+		cout << *(p + i) << ' ';
 	}
 	cout << endl;
 	return;
 }
 
 void p_stacks(short stacks[], const int sz) {
+	// c-style
 	for(auto *p = stacks ; p != &stacks[sz] ; ++p) {
 		cout << *p << ' ';
+	}
+	cout << endl;
+	// c++ style
+	short *p = &stacks[0];
+	for(auto i = 0 ; i < sz ; ++i) {
+		cout << *(p + i) << ' ';
 	}
 	cout << endl;
 	return;
