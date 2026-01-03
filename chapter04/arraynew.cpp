@@ -2,6 +2,7 @@
 #include <iostream>
 int main()
 {
+	system("clear");
     using namespace std;
     double * p3 = new double [3]; // space for 3 doubles
     p3[0] = 0.2;                  // treat p3 like an array name
@@ -14,5 +15,18 @@ int main()
     p3 = p3 - 1;                  // point back to beginning
     delete [] p3;                 // free the memory
     // cin.get();
+
+	float *p4 = new float[4];
+	for(auto i = 0 ; i < 4 ; ++i) {
+		p4[i] = 100 + i;
+	}
+
+	for(auto i = 0 ; i < 4 ; ++i) {
+		cout << p4[i] << ' ';
+	}
+
+	delete [] p4;
+
+	cout << endl;
     return 0; 
 }
