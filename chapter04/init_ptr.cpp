@@ -26,6 +26,12 @@ int main()
 
 	cout << endl;
 
+	int *pn = new int;
+	*pn = 100;
+	cout << "pn: " << *pn << " , address: " << pn << endl;
+
+	cout << endl;
+
     cout << "Value of higgens = " << higgens
          << "; Address of higgens = " << &higgens << endl;
     cout << "Value of *pt = " << *pt
