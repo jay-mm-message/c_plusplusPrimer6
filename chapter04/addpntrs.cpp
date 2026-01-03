@@ -59,6 +59,14 @@ void p_stacks_2(short stacks[], const int sz) {
 		<< ", *(stacks + 1) =  " << *(stacks + 1) << endl;
 }
 
+void p_stack_data(short (*p_arr)[3], const int sz) {
+	for(auto i = 0 ; i < sz ; ++i) {
+		cout << *((*p_arr) + i) << ' ';
+	}
+	cout << endl;
+	return;
+}
+
 int main()
 {
 	system("clear");
@@ -67,7 +75,13 @@ int main()
 	const int narr_sz = 3;
     double wages[narr_sz] = {10000.0, 20000.0, 30000.0};
     short stacks[narr_sz] = {3, 2, 1};
+	short stacks_2[narr_sz] = {5, 4, 3};
 
+	short (*p_arr)[narr_sz] = &stacks;
+	p_stack_data(p_arr, narr_sz);
+	p_arr = &stacks_2;
+	p_stack_data(p_arr, narr_sz);
+	
 	double *pw = wages;
 	short *ps = &stacks[0];
 
@@ -82,8 +96,8 @@ int main()
 	p_wages(wages, narr_sz);
 	p_stacks(stacks, narr_sz);
 
-	p_wages_2(wages, narr_sz);
-	p_stacks_2(stacks, narr_sz);
+	// p_wages_2(wages, narr_sz);
+	// p_stacks_2(stacks, narr_sz);
  
     // cin.get();
 
