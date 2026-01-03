@@ -22,8 +22,9 @@ void p_week() {
 	
 	cout << "One week..." << endl << endl;
 	int i = 1;
-	for(auto day = Week::Monday ; day <= Week::Sunday ; day = Week(i)) {
-		cout << week[day] << endl;
+	for(auto day = Week::Monday ; day <= Week::Sunday ; 
+		day = static_cast<Week>(i)) {
+		cout << day << "." << week[day] << endl;
 		++i;
 	}
 	return;
