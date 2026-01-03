@@ -3,6 +3,7 @@
 #include <cstring>              // declare strlen(), strcpy()
 int main()
 {
+	system("clear");
     using namespace std;
     char animal[20] = "bear";   // animal holds bear
     const char * bird = "wren"; // bird holds address of string
