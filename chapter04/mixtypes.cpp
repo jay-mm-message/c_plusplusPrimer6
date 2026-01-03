@@ -26,5 +26,6 @@ int main()
     std::cout << (*ppa)->year << std::endl;
     std::cout << (*(ppb+1))->year << std::endl;
     // std::cin.get();
+	cout << endl;
     return 0;
 }
