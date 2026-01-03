@@ -2,6 +2,7 @@
 #include <iostream>
 int main()
 {
+	system("clear");
     using namespace std;
     int nights = 1001;
     int * pt = new int;         // allocate space for an int
