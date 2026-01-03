@@ -22,8 +22,8 @@ int main()
     cout << ": size of *pd = " << sizeof(*pd) << endl;
     // cin.get();
 
-	delete(pt);
-	delete(pd);
-	
+	delete pt;
+	delete pd;
+
     return 0;
 }
