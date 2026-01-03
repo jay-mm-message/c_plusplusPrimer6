@@ -1,6 +1,6 @@
 // mixtypes.cpp --some type combinations
 #include <iostream>
-
+using namespace std;
 struct antarctica_years_end
 {
     int year;
@@ -9,6 +9,8 @@ struct antarctica_years_end
 
 int main()
 {
+	system("clear");
+
     antarctica_years_end s01, s02, s03; 
     s01.year = 1998;
     antarctica_years_end * pa = &s02;
