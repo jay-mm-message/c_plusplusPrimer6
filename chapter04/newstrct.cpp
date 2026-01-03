@@ -9,7 +9,7 @@ struct inflatable   // structure definition
 };
 
 void p_inflatable(inflatable *ptr) {
-	cout << "name: " << ptr->name << endl;
+	cout << "name: " << (*ptr).name << endl;
 	cout << "volume: " << ptr->volume << endl;
 	cout << "price: $" << ptr->price << endl;
 }
