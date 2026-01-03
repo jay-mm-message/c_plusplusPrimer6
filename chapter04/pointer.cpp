@@ -2,6 +2,7 @@
 #include <iostream>
 int main()
 {
+	system("clear");
     using namespace std;
     int updates = 6;        // declare a variable
     int * p_updates;        // declare pointer to an int
