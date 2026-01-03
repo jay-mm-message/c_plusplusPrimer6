@@ -73,6 +73,7 @@ int main()
 
 	cout << "wages address: \t" << &wages << endl; 
 	cout << "&wages[0]: \t" << &wages[0] << endl;
+	cout << "&wages: \t"	<< &wages << endl;
 
 	cout << sizeof(wages) << " = size of wages (double[3]) array\n";
 	cout << sizeof(pw) << " = size of pw pointer\n";
