@@ -6,6 +6,7 @@ int main()
     int donuts = 6;
     double cups = 4.5;
 
+	system("clear");
     cout << "donuts value = " << donuts;
     cout << " and donuts address = " << &donuts << endl;
 // NOTE: you may need to use unsigned (&donuts)
