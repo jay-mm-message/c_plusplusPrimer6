@@ -16,54 +16,22 @@ enum Week {	Monday = 1,
 			Saturday,
 			Sunday};
 
-void select_day(int t) {
-	cout << endl;
-	switch(t) {
-		case 1:
-			cout << "Monday" << endl;
-			break;
-		case 2:
-			cout << "Tuesday" << endl;
-			break;
-		case 3:
-			cout << "Wednesday" << endl;
-			break;
-		case 4:
-			cout << "Thursday" << endl;
-			break;
-		case 5:
-			cout << "Friday" << endl;
-			break;
-		case 6:
-			cout << "Saturday" << endl;
-			break;
-		case 7:
-			cout << "Sunday" << endl;
-			break;
-		default:
-			break;
+void p_week() {
+	string week[] = {"Dummy", "Monday", "Tuesday", "Wednesday", 
+			"Thursday", "Friday", "Saturday", "Sunday"};
+	
+	cout << "One week..." << endl << endl;
+	int i = 1;
+	for(auto day = Week::Monday ; day <= Week::Sunday ; day = Week(i)) {
+		cout << week[day] << endl;
+		++i;
 	}
-}
-
-void menu() {
-	cout << "1. Monday\n"
-		<< "2. Tuesday\n"
-		<< "3. Wednesday\n"
-		<< "4. Thursday\n"
-		<< "5. Friday\n"
-		<< "6. Saturday\n"
-		<< "7. Sunday\n"
-		<< endl;
+	return;
 }
 
 int main() {
 	system("clear");
-	menu();
-	int type;
-	cout << "Please type: ";
-	cin >> type;
-	select_day(type);
-	
+	p_week();
 	cout << endl;
 	return 0;
 }
