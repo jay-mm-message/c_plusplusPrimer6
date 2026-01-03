@@ -19,6 +19,7 @@ int main()
 	system("clear");
     inflatable * ps = new inflatable {"Fabulous Frodo", 1.4, 27.99}; // allot memory for structure
     p_inflatable(ps);
+	delete ps;
 
 	// cout << "Enter name of inflatable item: ";
     // cin.get(ps->name, 20);            // method 1 for member access
@@ -29,7 +30,7 @@ int main()
     // cout << "Name: " << (*ps).name << endl;              // method 2
     // cout << "Volume: " << ps->volume << " cubic feet\n"; // method 1
     // cout << "Price: $" << ps->price << endl;             // method 1
-    delete ps;                        // free memory used by structure
+    // delete ps;                        // free memory used by structure
     // cin.get();
     // cin.get();
     return 0; 
