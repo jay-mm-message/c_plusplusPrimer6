@@ -24,6 +24,8 @@ int main()
 	cout << "sizeof(char*): " << sizeof(c_pt) << endl;
 	cout << "sizeof(struct student*): " << sizeof(st_pt) << endl;
 
+	cout << endl;
+
     cout << "Value of higgens = " << higgens
          << "; Address of higgens = " << &higgens << endl;
     cout << "Value of *pt = " << *pt
