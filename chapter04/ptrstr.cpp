@@ -5,9 +5,9 @@ int main()
 {
 	system("clear");
     using namespace std;
-    char animal[20] = "bear";   // animal holds bear
-    const char * bird = "wren"; // bird holds address of string
-    char * ps;                  // uninitialized
+    char animal[20] {"bear"};   // animal holds bear
+    const char *bird {"wren"}; // bird holds address of string
+    char *ps;                  // uninitialized
 
     cout << animal << " and ";  // display bear
     cout << bird << "\n";       // display wren
