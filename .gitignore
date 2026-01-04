@@ -4,6 +4,7 @@
 
 # running (F5)
 program
+push.sh
 
 # Compiled Object files
 *.slo
