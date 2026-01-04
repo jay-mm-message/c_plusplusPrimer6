@@ -3,10 +3,14 @@
 #include <ctime> // describes clock() function, clock_t type
 int main()
 {
+	system("clear");
     using namespace std;
     cout << "Enter the delay time, in seconds: ";
-    float secs;
-    cin >> secs;
+    float secs = 5.0;
+    //cin >> secs;
+	cout << "secs: " << secs << endl;
+	cout << "CLOCKS_PER_SEC: " << CLOCKS_PER_SEC << endl;
+
     clock_t delay = secs * CLOCKS_PER_SEC;  // convert to clock ticks
     cout << "starting\a\n";
     clock_t start = clock();
