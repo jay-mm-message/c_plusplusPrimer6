@@ -6,7 +6,7 @@ int main()
 	system("clear");
     using namespace std;
     cout << "Enter the delay time, in seconds: ";
-    float secs = 5.0;
+    float secs = 2.0;
     //cin >> secs;
 	cout << "secs: " << secs << endl;
 	cout << "CLOCKS_PER_SEC: " << CLOCKS_PER_SEC << endl;
@@ -14,8 +14,12 @@ int main()
     clock_t delay = secs * CLOCKS_PER_SEC;  // convert to clock ticks
     cout << "starting\a\n";
     clock_t start = clock();
+	cout << clock() << endl;
     while (clock() - start < delay )        // wait until time elapses
-        ;                                   // note the semicolon
+    {
+		cout << clock() << endl;
+	}
+	//;                                   // note the semicolon
     cout << "done \a\n";
     // cin.get();
     // cin.get();
