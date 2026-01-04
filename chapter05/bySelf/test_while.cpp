@@ -8,6 +8,7 @@ int main() {
 	do {
 		cin >> ch;
 		++cnt;
+		cout << ch;
 	} while(ch != '#');
 
 	cout << endl << cnt << " characters read\n";
