@@ -4,6 +4,8 @@
 
 int main()
 {
+	system("clear");
+	
     using namespace std;
 
     char automobile[50];
