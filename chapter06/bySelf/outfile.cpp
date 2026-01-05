@@ -10,14 +10,18 @@ int main() {
 	outfile << "123\n";
 	outfile << endl;
 
-	outfile.close();	
-	
-	cout << endl << endl;
-	cout << endl << endl; 
-	cout << endl << endl; 
-	cout << endl << endl;       
+	outfile.close();
 
-	cout << endl << endl; 	
-		
+	cout << endl << endl;
+	cout << endl << endl;
+	cout << endl << endl;
+	cout << endl << endl;
+
+	cout << endl << endl;
+
+
+	cout << endl << endl;
+
+
 	return 0;
 }
