@@ -25,6 +25,7 @@ int main()
     d_price = 0.913 * a_price;
 
 // display information on screen with cout
+	cout << endl << endl;
 
     cout << fixed;
     cout.precision(2);
