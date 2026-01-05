@@ -5,6 +5,7 @@
 # running (F5)
 program
 push.sh
+*.txt
 
 # Compiled Object files
 *.slo
