@@ -13,5 +13,7 @@ int main() {
 	outfile.close();	
 	
 	cout << endl << endl;
+	cout << endl << endl; 
+	
 	return 0;
 }
