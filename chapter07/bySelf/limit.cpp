@@ -18,6 +18,9 @@ int main() {
 	p_array_2(numbers + 0, numbers + ArSize);
 	//p_array(numbers, ArSize);
 
+	int sage = 50;
+	const int *pt = &sage;
+	cout << *pt << endl;
 
 	cout << endl;
 	return 0;
