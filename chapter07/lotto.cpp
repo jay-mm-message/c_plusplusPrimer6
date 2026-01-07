@@ -4,6 +4,7 @@
 long double probability(unsigned numbers, unsigned picks);
 int main()
 {
+	system("clear");
     using namespace std;
     double total, choices;
     cout << "Enter the total number of choices on the game card and\n"
@@ -30,6 +31,6 @@ long double probability(unsigned numbers, unsigned picks)
     unsigned p;
 
     for (n = numbers, p = picks; p > 0; n--, p--)
-        result = result * n / p ; 
+        result = result * n / p ;
     return result;
 }
