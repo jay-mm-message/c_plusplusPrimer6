@@ -3,7 +3,7 @@ using namespace std;
 
 int fill_array(int [], int);
 void create_array(int [], int);
-void p_array(int [], int);
+void p_array(const int [], int);
 
 int main() {
 	system("clear");
@@ -17,11 +17,12 @@ int main() {
 	return 0;
 }
 
-void p_array(int arr[], int n) {
+void p_array(const int arr[], int n) {
 	for(int i = 0 ; i < n ; ++i) {
 		cout << *(arr+i) << ' ';
 	}
 	cout << endl;
+	//*(arr+2) = 2;
 }
 
 void create_array(int arr[], int n) {
