@@ -22,21 +22,21 @@ int main() {
 
 void p_cookies(int arr[], int n) {
 	for(int i = 0 ; i < n ; ++i) {
-		cout << arr[i] << ' ';
+		cout << *(arr+i) << ' ';
 	}
 	cout << endl;
 }
 
 void create_cookies(int arr[], int n) {
 	for(int i = 0, j = 1 ; i < n ; ++i, j *= 2) {
-		arr[i] = j;
+		*(arr+i) = j;
 	}
 }
 
 int sum(int arr[], int n) {
 	int result {0};
 	for(int i = 0 ; i < n ; ++i) {
-		result = result + arr[i];
+		result = result + *(arr+i);
 	}
 	return result;
 }
